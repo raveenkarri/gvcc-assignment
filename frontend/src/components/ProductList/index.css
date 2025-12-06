@@ -1,0 +1,197 @@
+.plist-root {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.plist-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.plist-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.plist-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.plist-filters {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.plist-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.plist-label {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.plist-input,
+.plist-select {
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+}
+
+.plist-input:focus,
+.plist-select:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+  border-color: #2563eb;
+}
+
+.plist-apply-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.55rem 1.4rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 0.9rem;
+  justify-self: flex-start;
+}
+
+.plist-apply-btn:hover {
+  opacity: 0.96;
+}
+
+.plist-state {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.plist-spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #2563eb;
+  animation: plist-spin 0.7s linear infinite;
+}
+
+@keyframes plist-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.plist-error {
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.75rem;
+  background-color: #fef2f2;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.plist-empty {
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.75rem;
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.9rem;
+}
+
+.plist-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.plist-card {
+  border-radius: 0.9rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.65rem;
+  background-color: #ffffff;
+  display: flex;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.plist-image-wrap {
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.plist-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plist-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.plist-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.plist-card-category {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.plist-card-desc {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.plist-card-footer {
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plist-card-price {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.plist-card-link {
+  font-size: 0.85rem;
+  color: #2563eb;
+}
+
+@media (min-width: 640px) {
+  .plist-filters {
+    grid-template-columns: 1.5fr 0.9fr auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .plist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .plist-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

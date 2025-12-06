@@ -1,0 +1,41 @@
+.pg-root {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pg-btn {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  background-color: #ffffff;
+}
+
+.pg-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.pg-pages {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.pg-page {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  background-color: #ffffff;
+}
+
+.pg-page-active {
+  border-color: #2563eb;
+  background-color: #2563eb;
+  color: #ffffff;
+}

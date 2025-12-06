@@ -1,0 +1,84 @@
+.enqs-root {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.enqs-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.enqs-state {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.enqs-error {
+  padding: 0.8rem 0.9rem;
+  border-radius: 0.9rem;
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.enqs-empty {
+  padding: 0.8rem 0.9rem;
+  border-radius: 0.9rem;
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+
+.enqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.enqs-card {
+  border-radius: 0.9rem;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  padding: 0.7rem 0.9rem;
+}
+
+.enqs-header-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.enqs-product {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.enqs-name {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.enqs-email {
+  font-size: 0.8rem;
+  color: #6b7280;
+  word-break: break-all;
+}
+
+.enqs-phone {
+  font-size: 0.8rem;
+  color: #4b5563;
+  margin-bottom: 0.2rem;
+}
+
+.enqs-message {
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+@media (min-width: 640px) {
+  .enqs-header-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,2 +1,9 @@
-/node_modules
-/.env
+# Ignore ALL node_modules everywhere
+node_modules/
+
+# Ignore ALL .env files everywhere
+*.env
+
+# Ignore build outputs
+/build
+/dist
